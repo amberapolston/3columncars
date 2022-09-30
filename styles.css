@@ -1,0 +1,126 @@
+body {
+  background-color: hsl(0, 0%, 95%);
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+a {
+  background-color: hsl(0, 0%, 95%);
+  font-family: 'Lexend Deca', sans-serif;
+  border: none;
+  width: 125px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+  color: hsl(0, 0%, 95%);
+  border: solid 1px hsl(0, 0%, 95%);
+}
+
+article {
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+h2 {
+  color: hsl(0, 0%, 95%);
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+p {
+  color: hsl(0, 0%, 95%);
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+  line-height: 2;
+  font-weight: lighter;
+  margin-bottom: 50px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: absolute;
+  height: 60%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  justify-content: center;
+  width: 60%;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0 0 10px;
+}
+
+.sedanbutton {
+  color: hsl(31, 77%, 52%);
+}
+
+.sedanbutton:hover {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.suvbutton {
+  color: hsl(184, 100%, 22%);
+}
+
+.suvbutton:hover {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0;
+}
+
+.luxurybutton {
+  color: hsl(179, 100%, 13%);
+}
+
+.luxurybutton:hover {
+  background-color: hsl(179, 100%, 13%);
+}
+
+
+
+@media (max-width: 767px) {
+  body {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .container {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 300px;
+}
+
+  .sedans {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .luxury {
+    border-radius: 0 0 10px 10px;
+  }
+}
